@@ -1,0 +1,14 @@
+<script>
+function moveFirstToLast(arr) 
+{
+    if (!Array.isArray(arr)||arr.length===0) 
+    {
+        return 'Введите корректный массив';
+    }
+    var firstElement=arr.shift();
+    arr.push(firstElement);
+    return arr;
+}
+var arr = [1, 2, 3, 4, 5];
+console.log(moveFirstToLast(arr)); // [2, 3, 4, 5, 1]
+</script>

@@ -1,0 +1,25 @@
+<script>
+let data=[
+{
+    1: 11,
+    2: 12,
+    3: 13,
+},
+{
+    1: 21,
+    2: 22,
+    3: 23,
+},
+{
+    1: 24,
+    2: 25,
+    3: 26,
+},];
+let sum=data.reduce((total, obj)=>
+{
+    let values=Object.values(obj);
+    let objSum=values.reduce((a, b)=>a+b, 0);
+    return total+objSum;
+}, 0);
+console.log(sum); // 167
+</script>
